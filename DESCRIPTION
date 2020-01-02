@@ -3,11 +3,12 @@ Type: Package
 Title: What the Package Does in One 'Title Case' Line
 Version: 1.0
 Date: 2019-12-28
-Author: Your Name
+Author: SC19037
 Maintainer: Your Name <your@email.com>
 Description: One paragraph description of what the package does as one or more full
 License: GPL (>= 2)
 Imports: Rcpp (>= 1.0.3),xtable,DAAG,Ball,boot,microbenchmark,parallel,MASS,bootstrap,scales
+LinkingTo: Rcpp
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 Encoding: UTF-8

@@ -42,6 +42,7 @@ k_choose1 <- function(X, Y, kmax, N){
 #' x <- as.matrix(data[,2:21])
 #' y <- data[,1]
 #' k_best2 <- k_choose2(x, y)
+#' }
 #' @export
 k_choose2 <- function(X, Y){ 
   beta <- solve(t(X) %*% X) %*% t(X) %*% Y

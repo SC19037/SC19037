@@ -7,7 +7,7 @@
         "-IF:/R-3.6.2/include",
         "-DNDEBUG"
     ],
-    "hash" : "1577542174",
+    "hash" : "1577959412",
     "is_cpp" : true,
     "pch" : "Rcpp"
 }

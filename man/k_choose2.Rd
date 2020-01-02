@@ -17,3 +17,11 @@ the optimal ridge regression parameter
 \description{
 Getting the optimal ridge regression parameters by minimuming GIC
 }
+\examples{
+\dontrun{
+data <- read.table("E:/Rcpp/data.txt", header = TRUE)
+x <- as.matrix(data[,2:21])
+y <- data[,1]
+k_best2 <- k_choose2(x, y)
+}
+}

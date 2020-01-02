@@ -1345,7 +1345,7 @@ You have already written an R function for Exercise 9.4 (page 277, Statistical C
 ### answer
   The standard Laplace distribution has density $f(x) = \frac{1}{2}e^{-\left | x \right |}, x \in R$
   
-```{r}
+```{r,eval=TRUE}
 # R function
 
 laplace <- function(x, mu = 0, lambda = 1){
@@ -1371,28 +1371,8 @@ rw <- function(sigma, x0, N) {
 
 
 # Cpp function
-library(Rcpp)
 library(microbenchmark)
-cppFunction('NumericVector rwC(double sigma, double x_0,int N) {
-  NumericVector x(N);
-  NumericVector U=runif(N,0,1);
-  x(0)=x_0; 
-  double y;double a;double b;
-  for (int i=1; i<N; i++){
-    y = rnorm(1,x(i-1),sigma)[0];
-    a = 0.5 * exp(-abs(y));
-    b = 0.5 * exp(-abs(x(i-1)));
-    if (U[i] <= a/b){
-      x(i) = y;
-    }
-    else{
-      x(i)=x(i-1);
-    }
-  }
-  return x;
-}
-')
-
+library(SC19037)
 # define variables
 N <- 10000
 sigma <- c(0.5, 2, 8, 16)

@@ -1,2 +1,17 @@
 [
+    {
+        "definitions" : [
+            {
+                "column" : 15,
+                "file" : "E:/Rcpp/SC19037/src/rwC.cpp",
+                "kind" : 6,
+                "line" : 13,
+                "name" : "rwC(double, double, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@rwC#d#d#I#"
+            }
+        ],
+        "file" : "E:/Rcpp/SC19037/src/rwC.cpp",
+        "file_last_write" : 1577959056.000000
+    }
 ]
